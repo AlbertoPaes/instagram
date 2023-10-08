@@ -1,0 +1,482 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Roboto', sans-serif;
+}
+
+header, nav, article {
+  background-color: #FFFFFF;
+}
+
+header, .vertical-separator, nav, article {
+  border: 1px solid #dbdbdb;
+}
+
+header {
+  width: 100%;
+  height: 54px;
+
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 2;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.camera {
+  width: 22px;
+  height: 22px;
+}
+
+.vertical-separator {
+  height: 22px;
+}
+
+input {
+  width: 215px;
+  height: 28px;
+
+  background-color: #fafafa;
+  border: none;
+  border-radius: 3px;
+
+  font-weight: 400px;
+  font-size: 12px;
+  color: #979797;
+
+  text-align: center;
+}
+
+ion-icon {
+  cursor: pointer;
+}
+
+.icons-container {
+  display: flex;
+  gap: 20px;
+}
+
+.ion-icon-header, .icons-footer, .icons-footer-mobile {
+  width: 22px;
+  height: 22px;
+}
+
+.content {
+  width: 80%;
+  margin: 88px auto 60px;
+
+  display: flex;
+
+  gap: 30px;
+  
+  margin-bottom: 60px;
+}
+
+main {
+  width: 65%;
+}
+
+/*Beginning of the ASIDE*/
+
+.aside-sticky {
+  width: 35%;
+  overflow: hidden;
+}
+
+aside {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 23px;
+  position: fixed;
+}
+
+.user-aside-container {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+
+  margin-bottom: 24px;
+}
+
+.user-aside-container img {
+  width: 56px;
+  height: 56px;
+
+  border-radius: 28px;
+}
+
+.username-aside-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.username-aside-container span {
+  color: #8E8E8E;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.username-aside-container strong {
+  color: #262626;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.suggestions-container {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 17px;
+}
+
+.suggestions-container span {
+  color: #8E8E8E;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.suggestions-container strong {
+  color: #262626;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.follower-suggestions-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+
+  margin-bottom: 33px;
+}
+
+.follower-suggestions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.follower-suggestions > span {
+  color: #139EF2;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.follower {
+  display: flex;
+  gap: 11px;
+}
+
+.follower-username {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.follower-username strong {
+  color: #262626;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.follower-username span {
+  color: #8E8E8E;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.development-links {
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.development-links span {
+  color: #C7C7C7;
+  font-size: 11px;
+  font-weight: 400;
+}
+/*End of ASIDE*/
+
+nav {
+  height: 118px;
+  
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 18px;
+
+  overflow: hidden;
+
+  border-radius: 3px;
+
+  position: relative;
+
+  margin-bottom: 24px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+
+  cursor: pointer;
+}
+
+.image {
+  height: 66px;
+  width: 66px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('../assets/img/story-circle.svg');
+}
+
+.image img{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.user {
+  width: 66px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+
+  margin: 0 auto;
+}
+
+.user span {
+  font-size: 12px;
+}
+
+.arrow {
+  position: absolute;
+  right: 10px;
+  top: 45px;
+
+  color: #FFFFFF;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+}
+
+.arrow ion-icon {
+  height: 32px;
+  width: 32px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+}
+
+article > img {
+  width: 100%;
+  height: auto;
+}
+
+article video {
+  width: 100%;
+  height: auto;
+}
+
+.user-post {
+  height: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 17px;
+}
+
+.user-post img {
+  width: 32px;
+  height: 32px;
+}
+
+.user-post span {
+  color: #262626;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.user-image-and-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.ion-icon-user-post {
+  width: 16px;
+  height: 16px;
+}
+
+footer {
+  height: 76px;
+}
+
+.icons-footer-container, .post-likes {
+  height: 50%;
+
+  display: flex;
+  align-items: center;
+}
+
+.icons-footer-container {
+  width: 100%;
+
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.left-side-icons-footer {
+  display: flex;
+  gap: 13px;
+}
+
+.post-likes {
+  display: flex;
+  padding-left: 15px;
+
+  gap: 5px;
+}
+
+.post-likes img {
+  height: 20px;
+  width: 20px;
+}
+
+.post-likes span {
+  color: #000;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.post-likes strong {
+  font-weight: 500;
+}
+
+.logo-camera-mobile,
+.logo-instagram-mobile,
+.footer-mobile {
+  display: none;
+}
+
+/* Beginning of responsive layout */
+
+@media (max-width: 935px) {
+  header {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .aside-sticky {
+    display: none;
+  }
+
+  .content {
+    justify-content: center;
+  }
+
+  main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 614px) {
+  header {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .logo-container,
+  input,
+  .ion-icon-header:nth-child(2),
+  .ion-icon-header:nth-child(3),
+  .ion-icon-header:nth-child(4) {
+    display: none;
+  } 
+
+  .logo-camera-mobile,
+  .logo-instagram-mobile,
+  .footer-mobile
+  {
+    display: initial;
+  }
+
+  .content {
+    width: 100%;
+    margin: 53px auto 0px;
+  }
+
+  nav {
+    margin-bottom: -1px;
+  }
+
+  .footer-mobile {
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+    height: 54px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 0 15px;
+
+    border: 1px solid #DBDBDB;
+    background-color: #FFF;
+
+    z-index: 2;
+  }
+  
+  .footer-mobile ion-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  article {
+    margin-bottom: 53px;
+  }
+}
+
+/*End of responsive layout*/
+
